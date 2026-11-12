@@ -14,5 +14,6 @@ int main() {
         cout<<angka;
         cout<<" adalah bilangan ganjil";
     }
+    system("pause");
     return 0;
 }
