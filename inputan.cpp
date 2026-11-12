@@ -1,19 +1,24 @@
 
-
 #include <iostream>
 using namespace std;
 int main() {
     int angka;
-    cout<<"masukan bilangan : ";
-    cin>>angka;
-    if (angka % 2 == 0)
-    {
+    char ulang;
+    do {
+        cout<<"Masukkan Bilangan : ";
+        cin>>angka;
+        if (angka % 2 == 0) {
         cout<<angka;
-        cout<<" adalah bilangan genap ";
-    } else {
+        cout<<" adalah bilangan genap "<<endl;
+        } else {
         cout<<angka;
-        cout<<" adalah bilangan ganjil";
-    }
+        cout<<" adalah bilangan ganjil : "<<endl;
+        }
+    cout<<"Tekan (a,b) : ";
+    cin>>ulang;
+    cout<<endl;
+    } while (ulang == 'a' || ulang == 'b');
+    
     system("pause");
     return 0;
 }
